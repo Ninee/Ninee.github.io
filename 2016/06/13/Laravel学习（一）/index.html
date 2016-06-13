@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Wind">
 <meta property="og:description" content="今天开始学习laravel，选择的版本是目前最新的5.2版本，主要原因是新增支持多认证驱动。写这个系列是为了让自己不要偷奶（偷懒），以及能及时温习学过的内容。：）">
 <meta property="og:image" content="http://imglf1.nosdn.127.net/img/RHFEU2RhMGlTYnhEbGxIUHBpVWplVzNYT1NieFlTS2xna20vbmVDYnRwRllDeEdTcTAwMnB3PT0.png?imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg">
-<meta property="og:updated_time" content="2016-06-13T07:24:50.000Z">
+<meta property="og:updated_time" content="2016-06-13T07:42:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Laravel学习（一）">
 <meta name="twitter:description" content="今天开始学习laravel，选择的版本是目前最新的5.2版本，主要原因是新增支持多认证驱动。写这个系列是为了让自己不要偷奶（偷懒），以及能及时温习学过的内容。：）">
@@ -208,9 +208,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>今天开始学习laravel，选择的版本是目前最新的5.2版本，主要原因是新增支持多认证驱动。写这个系列是为了让自己不要偷奶（偷懒），以及能及时温习学过的内容。：）<br><a id="more"></a></p>
-<p>###1.服务器的搭建<br>我用的是macbook，用虚拟机装了CentOS minimal版本,偷了一箱奶，直接上了wdlinux一键安装包，整个开发环境就搭建好了。：）</p>
-<p>###2.建立、配置站点<br>让我们开始建立个站点来开始我们的学习吧。登录WDCP面板，直接建立站点，一路默认下去。将laravel通过ftp上传到站点根目录，然后在站点管理里找到文件，修改<code>nginx</code>和<code>apache</code>的<code>conf</code>文件，将站点根目录定位到laravel的<code>public</code>,需要在WDCP面板左侧的系统管理重启web服务才可以生效。接下来修改目录权限，需要配置一些目录的读写权限：storage 和 bootstrap/cache 目录应该是可写的。</p>
-<p>###3.让我们开始吧<br>修改host文件，将建立的站点的域名(我的是ninee.com)映射到虚拟机的IP地址。打开浏览器访问域名，如果没有出错的话，你应该能看到这样的页面：<br><img src="http://imglf1.nosdn.127.net/img/RHFEU2RhMGlTYnhEbGxIUHBpVWplVzNYT1NieFlTS2xna20vbmVDYnRwRllDeEdTcTAwMnB3PT0.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg" alt="index"><br><strong>恭喜！!正式踏上laravel开发之旅！</strong></p>
+<h2 id="1-服务器的搭建"><a href="#1-服务器的搭建" class="headerlink" title="1.服务器的搭建"></a>1.服务器的搭建</h2><p>我用的是macbook，用虚拟机装了CentOS minimal版本,偷了一箱奶，直接上了wdlinux一键安装包，整个开发环境就搭建好了。：）</p>
+<h2 id="2-建立、配置站点"><a href="#2-建立、配置站点" class="headerlink" title="2.建立、配置站点"></a>2.建立、配置站点</h2><p>让我们开始建立个站点来开始我们的学习吧。登录WDCP面板，直接建立站点，一路默认下去。将laravel通过ftp上传到站点根目录，然后在站点管理里找到文件，修改<code>nginx</code>和<code>apache</code>的<code>conf</code>文件，将站点根目录定位到laravel的<code>public</code>,需要在WDCP面板左侧的系统管理重启web服务才可以生效。接下来修改目录权限，需要配置一些目录的读写权限：storage 和 bootstrap/cache 目录应该是可写的。</p>
+<h2 id="3-让我们开始吧"><a href="#3-让我们开始吧" class="headerlink" title="3.让我们开始吧"></a>3.让我们开始吧</h2><p>修改host文件，将建立的站点的域名(我的是ninee.com)映射到虚拟机的IP地址。打开浏览器访问域名，如果没有出错的话，你应该能看到这样的页面：<br><img src="http://imglf1.nosdn.127.net/img/RHFEU2RhMGlTYnhEbGxIUHBpVWplVzNYT1NieFlTS2xna20vbmVDYnRwRllDeEdTcTAwMnB3PT0.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg" alt="index"><br><strong>恭喜！!正式踏上laravel开发之旅！</strong></p>
 
       
     </div>
